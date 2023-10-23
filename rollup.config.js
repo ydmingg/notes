@@ -89,14 +89,14 @@ if (isProduction) {
 } else {
     // 开发环境下配置
     const extraPlugins = [
-            serve({
-                host: '192.168.1.6',
-                port: 8064,
-                // open: true,
-                contentBase: './',
-            }),
-            livereload()
-        ]
+		serve({
+			host: '192.168.5.235',
+			port: 8064,
+			// open: true,
+			contentBase: './'
+		}),
+		livereload()
+	]
         // 加入插件数组
     plugins.push(...extraPlugins)
         // 打包配置

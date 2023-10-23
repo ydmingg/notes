@@ -15,6 +15,17 @@
 <body>
     <div id="app"></div>
     <div id="popout"></div>
+
+    <script>
+        let ss = [];
+
+        [1, 2, 3, "werwer"].forEach(function(el) {
+            console.log(this);
+            this.push(el);
+        }, ss)
+
+        console.log(ss);
+    </script>
 </body>
 
 </html>
